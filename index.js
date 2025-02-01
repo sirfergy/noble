@@ -1,2 +1,1 @@
-module.exports = require('@abandonware/noble/with-custom-binding')({ extended: true });
-
+module.exports = require('./with-custom-binding')();
