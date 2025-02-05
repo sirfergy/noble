@@ -33,7 +33,7 @@ jobs:
           architecture: ${{ matrix.node }}
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.13'
       - uses: actions/checkout@v3
       - name: Install dependencies (ubuntu-latest)
         # Use g++-9 only on versions after 'ubuntu-18.04'
