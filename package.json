@@ -1,8 +1,7 @@
 {
   "author": "Sandeep Mistry",
   "maintainers": [
-    "Jacob Rosenthal",
-    "Luis Montes"
+    "Sean Ferguson"
   ],
   "license": "MIT",
   "name": "@sirfergy/noble",
