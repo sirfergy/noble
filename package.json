@@ -16,10 +16,10 @@
     "url": "https://github.com/abandonware/noble/issues"
   },
   "keywords": [
-    "bluetooth",
+    "Bluetooth",
     "BLE",
-    "bluetooth low energy",
-    "bluetooth smart",
+    "Bluetooth Low Energy",
+    "Bluetooth smart",
     "central"
   ],
   "main": "./index.js",
