@@ -237,7 +237,7 @@ describe('hci-socket hci', () => {
 
   it('should setSocketFilter', () => {
     hci.setSocketFilter();
-    assert.calledOnceWithExactly(hci._socket.setFilter, Buffer.from([0x16, 0, 0, 0, 0x20, 0xc1, 0x08, 0, 0, 0, 0, 0x40, 0, 0]));
+    assert.calledOnceWithExactly(hci._socket.setFilter, Buffer.from([0x16, 0, 0, 0, 0x20, 0xc1, 0x08, 0, 0, 0, 0, 0x40, 0, 0, 0, 0]));
   });
 
   it('should setEventMask', () => {
@@ -1068,7 +1068,7 @@ describe('hci-socket hci', () => {
       const callback = sinon.spy();
 
       hci.on('stateChange', callback);
-      hci.onSocketError({ });
+      hci.onSocketError({});
 
       assert.notCalled(callback);
     });
