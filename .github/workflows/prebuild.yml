@@ -46,7 +46,7 @@ jobs:
       - run: npm install --ignore-scripts
       - run: npm run prebuild-${{ matrix.name }}
       - run: tar -zcvf ${{ matrix.name }}.tar.gz -C prebuilds .
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.name }}
           path: ${{ matrix.name }}.tar.gz
@@ -58,7 +58,7 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4
         with:
           path: artifacts
       - uses: docker://antonyurchenko/git-release:v4
