@@ -17,7 +17,7 @@ jobs:
       matrix:
         include:
           - name: darwin
-            os: macos-11
+            os: macos-13
             node: x64
           - name: linux
             os: ubuntu-latest
